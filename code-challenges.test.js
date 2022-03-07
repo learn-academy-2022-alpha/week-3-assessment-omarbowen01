@@ -21,8 +21,32 @@
 // Example input: 10
 // Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
+//Create a test statement with expect statements that take in a number greater than 2 and returns an array containing the numbers of the numbers of the Fibonacci sequence.
+
+describe("fibonacciSequence", () => {
+  it ("returns an array with length containing the numbers of the Fibonacci Sequence", () => {
+  expect(fibonacciSequence(num>2)).toEqual("")
+  })
+})
 
 // b) Create the function that makes the test pass.
+
+// create a function that reflects that fibonacciSequence. The next number is found by adding up the two numbers before it.
+// tried a console log to run the data.
+
+var num= [i]
+
+const fibonacciSequence = (num) => {
+  if (num>2) {
+    return (num-1) + (num-2)
+else {
+  return ("invalid")
+}
+  }
+}
+
+console.log(num(i))
+//what i have so far is this and I'm stumped on it.
 
 
 // --------------------2) Create a function that takes in an array and returns a new array of only odd numbers sorted from least to greatest.
@@ -36,8 +60,28 @@ const fullArr2 = ["hello", 7, 23, -823, false, 78, null, "67", 6, "number"]
 // Expected output: [-823, 7, 23]
 
 
+// Create a test statement for the array
+describe("onlyOdd", () => {
+  it("takes in an array and returns a new array of only odd numbers sorted from least to greatest", () => {
+    expect(onlyOdd(fullArr1, fullArr2)).toEqual(result)
+  })
+})
+
+
 // b) Create the function that makes the test pass.
 
+//create function that takes in an array and returns a new one sorted from least to greatest
+const fullArr1= (array) => {
+  let fullArr1.sort((a,b) => a-b
+  return array.filter(value => value !%2===0)
+})
+console.log(fullArr1)
+
+const fullArr2= (array) => {
+  let fullArr2.sort((a,b) => a-b
+  return array.filter(value => value !%2===0)
+})
+console.log(fullArr2)
 
 // --------------------3) Create a function that takes in an array and returns an array of the accumulating sum. An empty array should return an empty array.
 
@@ -52,5 +96,21 @@ const numbersToAdd2 = [0, 7, -8, 12]
 const numbersToAdd3 = []
 // Expected output: []
 
+//create a test statement for the array
+describe("sumOfArray", () => {
+  it("Creates a function that takes in an array and returns an array of the accumulating sum", () => {
+    expect(sumOfArray(numbersToAdd1, numbersToAdd2, numbersToAdd3)).toEqual(result)
+  })
+})
+
+
 
 // b) Create the function that makes the test pass.
+
+//try to make a function that will iterate through the array and return that same set of value
+//use map function
+
+const addingSum = numbersToAdd1.map(value => {
+  return value
+})
+console.log(addingSum(sumOfArray(""))

@@ -62,10 +62,15 @@
           }
           // No need to change anything ABOVE this line ^
 
+// added an opening div on line 70
+// added an opening and closing tag on line 69 and 87. Stuck on how to solve it from here.
+
           return(
+          <>
+            <div>
               <h1>Draw a Card</h1>
               <button onClick={}>
-                Click to Draw a Card
+              Click to Draw a Card
               </button>
               <button onClick={shuffle}>
                 Return Cards and Shuffle Deck
@@ -79,6 +84,7 @@
                   )
                 })}
               </div>
+              </>
           )
         }
       }
