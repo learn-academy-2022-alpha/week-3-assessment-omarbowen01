@@ -43,15 +43,14 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Your answer: Yarn is the package manager that holds the react application for your terminal. The javascript file is modified when you run it.
 
-  Researched answer: Yarn is a package manager for node.js that focuses on speed, security and consistency. It was developed by facebook to help make webpages more dynamic.
-
+  Researched answer: Yarn is a package manager for node.js that focuses on speed, security and consistency. It was developed by facebook to help make webpages more dynamic. It modifies node_modules, package.json and the yarn.lock files.
 
 
 6. STRETCH: What is an anonymous function in JavaScript?
 
   Your answer: Without any prior knowledge of this answer I would assume it is function that runs random numbers in JavaScript but I will research this and elaborate on this answer below.
 
-  Researched answer: A function that doesn't have a name associated with it.
+  Researched answer: A function that doesn't have a name associated with it. When you iterate through an array with the ".map" you pass the map an argument of () => {} with value as one of the anonymous functions parameters.
 
 
 ## Looking Ahead: Terms for Next Week
