@@ -62,12 +62,17 @@
           }
           // No need to change anything ABOVE this line ^
 
+// added an opening and closing tag on line 69 and 87. Stuck on how to solve it from here.
+//added this.drawCard on line 72
           return(
+
+          <>
+
               <h1>Draw a Card</h1>
-              <button onClick={}>
-                Click to Draw a Card
+              <button onClick={this.drawCard}>
+              Click to Draw a Card
               </button>
-              <button onClick={shuffle}>
+              <button onClick={this.shuffle}>
                 Return Cards and Shuffle Deck
               </button>
               <div style={handStyles}>
@@ -75,13 +80,12 @@
                   return (
                     <div style={cardStyles} key={index}>
                       {card}
-                    </div>
+                      </div>
                   )
                 })}
-              </div>
-          )
-        }
-      }
+                </div>
+            </>
+
 
       // No need to change anything below this line
       const domContainer = document.querySelector('#react-container')
